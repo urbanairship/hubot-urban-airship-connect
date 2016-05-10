@@ -10,10 +10,8 @@ describe 'hubot-urban-airship-connect', ->
       respond: sinon.spy()
       hear: sinon.spy()
 
+    process.env.UA_CONNECT_ROOMS = 'cnct-bot'
     require('../src/hubot-urban-airship-connect')(@robot)
 
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/hello/)
-
   it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/orly/)
+    expect(@robot.hear).to.have.been.calledWith(/!current/)

@@ -1,7 +1,7 @@
 {
   "name": "hubot-hubot-urban-airship-connect",
   "description": "A hubot script for seeing Urban Airship Connect events",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Bryan Schlief <bryan.schlief@urbanairship.com>",
   "license": "MIT",
 
@@ -9,14 +9,18 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-hubot-urban-airship-connect.git"
+    "url": "git://github.com/urbanairship/hubot-urban-airship-connect.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-hubot-urban-airship-connect/issues"
+    "url": "https://github.com/urbanairship/hubot-urban-airship-connect/issues"
   },
 
   "dependencies": {
+    "urban-airship-connect": "1.x",
+    "debounce-stream": "2.0.0",
+    "dotpather": "0.1.4",
+    "objectstate": "3.0.0"
   },
 
   "peerDependencies": {
