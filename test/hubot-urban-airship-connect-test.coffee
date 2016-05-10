@@ -9,7 +9,8 @@ describe 'hubot-urban-airship-connect', ->
     @robot =
       respond: sinon.spy()
       hear: sinon.spy()
-
+      brain:
+        once: sinon.spy()
     process.env.UA_CONNECT_ROOMS = 'cnct-bot'
     require('../src/hubot-urban-airship-connect')(@robot)
 
