@@ -1,5 +1,5 @@
 {
-  "name": "hubot-hubot-urban-airship-connect",
+  "name": "hubot-urban-airship-connect",
   "description": "A hubot script for seeing Urban Airship Connect events",
   "version": "0.0.1",
   "author": "Bryan Schlief <bryan.schlief@urbanairship.com>",
