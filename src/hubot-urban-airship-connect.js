@@ -1,3 +1,7 @@
+// Copyright 2016 Urban Airship Inc. and Contributors. Subject to the LICENSE file
+// at the top-level directory of this distribution and at
+// https://github.com/urbanairship/hubot-urban-airship-connect/blob/master/LICENSE
+//
 // Description:
 //   Urban Airship Connect bot
 //
@@ -245,6 +249,8 @@ module.exports = robot => {
     })
 
     stream
+       // uncomment this if you want to drop messages that come in at a rate
+       // faster than 1 mesage per 1000 msec
        //.pipe(debounce(MESSAGE_PER_MS, true))
       .on('data', postToChannel)
     stream
