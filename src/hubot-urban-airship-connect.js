@@ -52,7 +52,8 @@ const EVENT_TYPES = new Set([
   'IN_APP_MESSAGE_EXPIRATION',
   'IN_APP_MESSAGE_RESOLUTION',
   'IN_APP_MESSAGE_DISPLAY',
-  'SEND'
+  'SEND',
+  'LOCATION'
 ])
 const DEVICE_TYPES = new Set(['ios', 'android', 'amazon'])
 const DEFAULT_OUTPUT = new Set([
